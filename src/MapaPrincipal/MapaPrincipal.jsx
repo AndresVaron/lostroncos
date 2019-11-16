@@ -26,6 +26,15 @@ class MapaPrincipal extends React.Component {
         ingreso: false
       });
     }
+    let info = {
+      poly: [
+        { lat: 2.552654, lng: -72.836102 },
+        { lat: 2.544609, lng: -72.832424 },
+        { lat: 2.547288, lng: -72.822045 },
+        { lat: 2.558031, lng: -72.825027 },
+        { lat: 2.558028, lng: -72.825028 }
+      ]
+    };
   }
 
   handleGoogleMapApi(google) {
