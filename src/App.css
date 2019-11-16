@@ -1,0 +1,70 @@
+.noPadding {
+  padding: 0;
+}
+
+.botonVerde {
+  position: fixed;
+  bottom: 15px;
+  background-color: #72b324;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #72b324;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: 0;
+  margin-left: 20px;
+}
+
+.botonVerde2 {
+  background-color: #72b324;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #72b324;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.botonVerde3 {
+  background-color: #72b324;
+  color: white;
+  font-size: 18px;
+  border: 1px solid #72b324;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Domine", serif;
+  padding: 20px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: "Domine", serif;
+}
+
+h3 {
+  font-family: "Domine", serif;
+}
+
+h4 {
+  font-family: "Domine", serif;
+}
+
+h5 {
+  font-family: "Domine", serif;
+}
+
+h6 {
+  font-family: "Domine", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,16 @@
+.fondoVerde {
+  text-align: center;
+  padding: 0;
+  background-color: rgba(115, 179, 36, 0.13);
+  height: 100vh;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 25px;
+}
+
+.margenTutorial {
+  margin-left: 25px;
+  margin-right: 25px;
+}
