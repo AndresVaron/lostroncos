@@ -11,6 +11,13 @@ class Titulo extends Component {
       <div className="contenedorTitulo">
         <h1 className="titulo">Los Troncos</h1>
         <h5>Rastreo Inteligente</h5>
+        <input
+          className="codigo"
+          ref={this.codigo}
+          type="text"
+          placeholder="Ingresa tu código"
+        ></input>
+        <br />
         <button className="botonVerificar" onClick={this.props.handleVerificar}>
           Verificar mi Madera
         </button>
