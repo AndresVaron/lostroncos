@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import Detail from "./MapaPrincipal/MapaPrincipal.jsx";
+import Secondary from "./MapaSecundario/MapaSecundario.jsx";
 import { geolocated } from "react-geolocated";
 
 class App extends Component {
@@ -44,7 +45,10 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={() => <Home />} />
           <Route
-            exact
+            path="/errores"
+            component={() => <Secondary myLocation={this.state.location} />}
+          />
+          <Route
             path="/:id"
             component={() => <Detail myLocation={this.state.location} />}
           />
