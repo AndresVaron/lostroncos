@@ -21,19 +21,19 @@ class Informacion extends Component {
                 <h4>Tala Sostenible de Madera</h4>
                 <p>
                   Tenemos industrias avaladas por el gobierno que se aseguran de
-                  hacer un uso sostenible de nuestros bosques que aseguran el
-                  bienestar de nuestros ecosistemas
+                  hacer un uso sostenible de los bosques que aseguran el
+                  bienestar de nuestros ecosistemas.
                 </p>
               </div>
             </div>
             <div className="col-md-4">
               <div className="seccion">
                 <img className="imagen" src={camion} alt="" />
-                <h4>Tala Sostenible de Madera</h4>
+                <h4>Control de las Transformaciones</h4>
                 <p>
-                  Tenemos industrias avaladas por el gobierno que se aseguran de
-                  hacer un uso sostenible de nuestros bosques que aseguran el
-                  bienestar de nuestros ecosistemas
+                  Mediante la tecnología de Block Chain hacemos seguimiento de
+                  la materia prima en cada una de las etapas de la cadena de
+                  transformación.
                 </p>
               </div>
             </div>
@@ -42,9 +42,9 @@ class Informacion extends Component {
                 <img className="imagen" src={qr} alt="" />
                 <h4>Tala Sostenible de Madera</h4>
                 <p>
-                  Tenemos industrias avaladas por el gobierno que se aseguran de
-                  hacer un uso sostenible de nuestros bosques que aseguran el
-                  bienestar de nuestros ecosistemas
+                  Empoderamos al usuario final con herramientas que le permitan
+                  saber la procedencia y la trayectoria de la madera de los
+                  productos que adquiere.
                 </p>
               </div>
             </div>
