@@ -1,14 +1,22 @@
 import React, { Component } from "react";
 import "./NavBar.css";
+import { withRouter } from "react-router-dom";
 class NavBar extends Component {
   state = {};
   render() {
     return (
       <div className="contenedor">
-        <button className="botonTransparente">Ver Reporte de Anomalias</button>
+        <button
+          className="botonTransparente"
+          onClick={() => {
+            this.props.history.push("/errores");
+          }}
+        >
+          Ver Reporte de Anomalias
+        </button>
       </div>
     );
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

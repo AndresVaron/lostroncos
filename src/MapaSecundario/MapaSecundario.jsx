@@ -72,6 +72,14 @@ class MapaSecundario extends React.Component {
             <div className="col-12 noPadding">
               <div className="contenedorPrincipal">
                 <div style={{ height: "100vh", width: "100%" }}>
+                  <button
+                    className="btn btn-info btn-back"
+                    onClick={() => {
+                      this.props.history.goBack();
+                    }}
+                  >
+                    Go Back
+                  </button>
                   <GoogleMapReact
                     bootstrapURLKeys={{
                       key: "AIzaSyAEN10VnQRdN67sDTlx-mfWapGXB8rLMas",
