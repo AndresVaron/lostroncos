@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Fill_out_line"
+   height="512"
+   viewBox="0 0 512 512"
+   width="512"
+   data-name="Fill out line"
+   version="1.1"
+   sodipodi:docname="qr-code.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata49">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs47" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="971"
+     id="namedview45"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="-98.491645"
+     inkscape:cy="376.05151"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Fill_out_line" />
+  <path
+     d="m184 328h-160v-232l.00008-.00008a113.137 113.137 0 0 1 159.99984 0l.00008.00008z"
+     fill="#fc7"
+     id="path2"
+     style="fill:#aed1a9;fill-opacity:1" />
+  <path
+     d="m312 448h176v48h-176z"
+     fill="#eb352f"
+     id="path4"
+     style="fill:#ff6600" />
+  <rect
+     fill="#57c1ff"
+     height="448"
+     rx="16"
+     width="240"
+     x="152"
+     y="40"
+     id="rect6"
+     style="fill:#104539;fill-opacity:1" />
+  <path
+     d="m152 400v8a16 16 0 0 0 16 16h208a16 16 0 0 0 16-16v-288a16 16 0 0 0 -16-16h-208a16 16 0 0 0 -16 16z"
+     fill="#65dcff"
+     id="path8"
+     style="fill:#ffffff" />
+  <path
+     d="m184 328h176v64h-176z"
+     fill="#a0cc00"
+     id="path10" />
+  <path
+     d="m456 230.63v217.37h-64v-24l-10.75-10.75a63.99478 63.99478 0 0 1 0-90.5l10.75-10.75-46-46a25.45584 25.45584 0 0 1 36-36l10 10v-64h9.37a54.62742 54.62742 0 0 1 54.63 54.63z"
+     fill="#ffc7cc"
+     id="path12" />
+  <path
+     d="m88 144h-32a8.00008 8.00008 0 0 0 -8 8v32a8.00008 8.00008 0 0 0 8 8h32a8.00008 8.00008 0 0 0 8-8v-32a8.00008 8.00008 0 0 0 -8-8zm-8 32h-16v-16h16z"
+     id="path14" />
+  <path
+     d="m88 208h-32a8.00008 8.00008 0 0 0 -8 8v32a8.00008 8.00008 0 0 0 8 8h32a8.00008 8.00008 0 0 0 8-8v-32a8.00008 8.00008 0 0 0 -8-8zm-8 32h-16v-16h16z"
+     id="path16" />
+  <circle
+     cx="328"
+     cy="72"
+     r="8"
+     id="circle18" />
+  <circle
+     cx="360"
+     cy="72"
+     r="8"
+     id="circle20" />
+  <path
+     d="m240 64h64v16h-64z"
+     id="path22" />
+  <path
+     d="m240 448h64v16h-64z"
+     id="path24" />
+  <path
+     d="m200 208h48a8.00008 8.00008 0 0 0 8-8v-48a8.00008 8.00008 0 0 0 -8-8h-48a8.00008 8.00008 0 0 0 -8 8v48a8.00008 8.00008 0 0 0 8 8zm8-48h32v32h-32z"
+     id="path26" />
+  <path
+     d="m296 208h48a8.00008 8.00008 0 0 0 8-8v-48a8.00008 8.00008 0 0 0 -8-8h-48a8.00008 8.00008 0 0 0 -8 8v48a8.00008 8.00008 0 0 0 8 8zm8-48h32v32h-32z"
+     id="path28" />
+  <path
+     d="m200 304h48a8.00008 8.00008 0 0 0 8-8v-48a8.00008 8.00008 0 0 0 -8-8h-48a8.00008 8.00008 0 0 0 -8 8v48a8.00008 8.00008 0 0 0 8 8zm8-48h32v32h-32z"
+     id="path30" />
+  <path
+     d="m288 240h16v-16h-24a8.00008 8.00008 0 0 0 -8 8v40h16z"
+     id="path32" />
+  <path
+     d="m272 288h16v16h-16z"
+     id="path34" />
+  <path
+     d="m320 352h16v16h-16z"
+     id="path36" />
+  <path
+     d="m208 352h32v16h-32z"
+     id="path38" />
+  <path
+     d="m256 352h48v16h-48z"
+     id="path40" />
+  <path
+     d="m488 440h-24v-209.373a62.62864 62.62864 0 0 0 -62.62744-62.627h-1.37256v-112a24.0275 24.0275 0 0 0 -24-24h-208a24.0275 24.0275 0 0 0 -24 24v5.65308a120.58059 120.58059 0 0 0 -32-6.48072v-31.17236a8 8 0 0 0 -16 0v31.19043a121.314 121.314 0 0 0 -77.65674 35.15234 8.00076 8.00076 0 0 0 -2.34326 5.65723v232a8.00008 8.00008 0 0 0 8 8h120v136a24.0275 24.0275 0 0 0 24 24h208a24.0275 24.0275 0 0 0 24-24v-16h80v40h16v-48a8.00008 8.00008 0 0 0 -8-8zm-320-392h208a8.00917 8.00917 0 0 1 8 8v41.37622a23.88212 23.88212 0 0 0 -8-1.37622h-208a23.88212 23.88212 0 0 0 -8 1.37622v-41.37622a8.00917 8.00917 0 0 1 8-8zm-24 128h-16v-16h16zm-112 144v-220.61426a105.33707 105.33707 0 0 1 64-28.16113v32.77539a8 8 0 0 0 16 0v-32.79834a104.53621 104.53621 0 0 1 32 7.55078v65.24756h-24a8.00008 8.00008 0 0 0 -8 8v32a8.00008 8.00008 0 0 0 8 8h24v16h-24a8.00008 8.00008 0 0 0 -8 8v32h16v-24h16v96zm128-200a8.00917 8.00917 0 0 1 8-8h208a8.00917 8.00917 0 0 1 8 8v101.17188a33.45387 33.45387 0 0 0 -43.29633 2.82812h-20.70367v16h11.5238a33.71584 33.71584 0 0 0 0 16h-19.5238a8.00008 8.00008 0 0 0 -8 8v32a8.00008 8.00008 0 0 0 8 8h32a8.00008 8.00008 0 0 0 8-8v-12.686l28.68652 28.686-5.08838 5.08789a72.87384 72.87384 0 0 0 -7.78241 9.21533 8.00039 8.00039 0 0 0 -7.81573-6.30322h-176a8.00008 8.00008 0 0 0 -8 8v64a8.00008 8.00008 0 0 0 8 8h176a8.0102 8.0102 0 0 0 1.87732-.23047 71.84751 71.84751 0 0 0 10.97485 16.23047h-204.85217a8.00917 8.00917 0 0 1 -8-8zm176 152v16h-16v-16zm16 64v48h-160v-48zm32 136a8.00917 8.00917 0 0 1 -8 8h-208a8.00917 8.00917 0 0 1 -8-8v-41.376a23.894 23.894 0 0 0 8 1.376h208a24.02091 24.02091 0 0 0 8-1.36182zm16-32v-16a8.00076 8.00076 0 0 0 -2.34326-5.65723l-10.74512-10.74511a55.99964 55.99964 0 0 1 0-79.19532l10.74512-10.74511a8.00034 8.00034 0 0 0 0-11.31446l-46-45.999a17.456 17.456 0 1 1 24.68652-24.68652l26 26a8.00018 8.00018 0 0 0 11.31348-11.31446l-13.65674-13.65627v-52.68652h1.37256a46.62619 46.62619 0 0 1 46.62744 46.627v209.373z"
+     id="path42" />
+</svg>

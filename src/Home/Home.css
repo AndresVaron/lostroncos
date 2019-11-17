@@ -4,3 +4,21 @@
   top: -50%;
   left: -50%;
 }
+
+.container-fluid {
+  padding: 0;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.contenedorTransparente {
+  height: 800px;
+  background: url("imagen.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}

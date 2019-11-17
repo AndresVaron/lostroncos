@@ -1,0 +1,19 @@
+.contenedorTitulo {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.titulo {
+  padding-bottom: 10px;
+}
+
+.botonVerificar {
+  background-color: #5bc0be;
+  border: 0;
+  height: 50px;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}

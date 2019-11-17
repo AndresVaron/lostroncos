@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
+   xml:space="preserve"
+   sodipodi:docname="delivery-truck.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata61"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs59" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1680"
+   inkscape:window-height="971"
+   id="namedview57"
+   showgrid="false"
+   inkscape:zoom="0.4609375"
+   inkscape:cx="256"
+   inkscape:cy="256"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<g
+   id="g8">
+	<path
+   style="fill:#ff7f2a"
+   d="M128,160c0-8.832-7.168-16-16-16H16c-8.832,0-16,7.168-16,16s7.168,16,16,16h96   C120.832,176,128,168.832,128,160z"
+   id="path2" />
+	<path
+   style="fill:#ff7f2a"
+   d="M112,208H48c-8.832,0-16,7.168-16,16s7.168,16,16,16h64c8.832,0,16-7.168,16-16S120.832,208,112,208   z"
+   id="path4" />
+	<path
+   style="fill:#ff7f2a"
+   d="M112,272H80c-8.832,0-16,7.168-16,16s7.168,16,16,16h32c8.832,0,16-7.168,16-16S120.832,272,112,272   z"
+   id="path6" />
+</g>
+<path
+   style="fill:#5f8d70;fill-opacity:1"
+   d="M509.728,263.776l-48-80C458.848,178.944,453.632,176,448,176H336c-8.832,0-16,7.168-16,16v160  c0,8.832,7.168,16,16,16h160c8.832,0,16-7.168,16-16v-80C512,269.088,511.232,266.24,509.728,263.776z"
+   id="path10" />
+<polygon
+   style="fill:#FAFAFA;"
+   points="384,208 438.944,208 477.344,272 384,272 "
+   id="polygon12" />
+<path
+   style="fill:#104539;fill-opacity:1"
+   d="M336,112H112c-8.832,0-16,7.168-16,16v224c0,8.832,7.168,16,16,16h240V128  C352,119.168,344.832,112,336,112z"
+   id="path14" />
+<circle
+   style="fill:#FAFAFA;"
+   cx="432"
+   cy="352"
+   r="32"
+   id="circle16" />
+<path
+   style="fill:#455A64;"
+   d="M432,400c-26.464,0-48-21.536-48-48s21.536-48,48-48s48,21.536,48,48S458.464,400,432,400z M432,336  c-8.8,0-16,7.2-16,16s7.2,16,16,16s16-7.2,16-16S440.8,336,432,336z"
+   id="path18" />
+<path
+   style="fill:#5f8d70;fill-opacity:1"
+   d="M352,368H112c-8.832,0-16-7.168-16-16v-48h256V368z"
+   id="path20" />
+<circle
+   style="fill:#FAFAFA;"
+   cx="208"
+   cy="352"
+   r="32"
+   id="circle22" />
+<path
+   style="fill:#455A64;"
+   d="M208,400c-26.464,0-48-21.536-48-48s21.536-48,48-48s48,21.536,48,48S234.464,400,208,400z M208,336  c-8.832,0-16,7.2-16,16s7.168,16,16,16s16-7.2,16-16S216.832,336,208,336z"
+   id="path24" />
+<g
+   id="g26">
+</g>
+<g
+   id="g28">
+</g>
+<g
+   id="g30">
+</g>
+<g
+   id="g32">
+</g>
+<g
+   id="g34">
+</g>
+<g
+   id="g36">
+</g>
+<g
+   id="g38">
+</g>
+<g
+   id="g40">
+</g>
+<g
+   id="g42">
+</g>
+<g
+   id="g44">
+</g>
+<g
+   id="g46">
+</g>
+<g
+   id="g48">
+</g>
+<g
+   id="g50">
+</g>
+<g
+   id="g52">
+</g>
+<g
+   id="g54">
+</g>
+</svg>

@@ -1,6 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { withRouter } from "react-router-dom";
+import imagenBosque from "./imagen.png";
+import NavBar from "../NavBar/NavBar";
+import Titulo from "../Titulo/Titulo";
+import Informacion from "../Informacion/Informacion";
 
 class Home extends React.Component {
   irId = () => {
@@ -11,9 +15,11 @@ class Home extends React.Component {
     return (
       <div className="container-fluid">
         <div>
-          <button className="btn btn-primary" onClick={this.irId}>
-            Ir a Historico
-          </button>
+          <div className="contenedorTransparente">
+            <NavBar />
+            <Titulo handleVerificar={this.irId} />
+          </div>
+          <Informacion />
         </div>
       </div>
     );
