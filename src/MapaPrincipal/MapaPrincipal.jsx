@@ -40,19 +40,48 @@ class MapaPrincipal extends React.Component {
           { lat: 2.558028, lng: -72.825028 }
         ],
         steps: [
-          { lat: 2.579775, lng: -72.760284 },
-          { lat: 3.502403, lng: -73.690598 },
-          { lat: 4.08584, lng: -73.674188 },
-          { lat: 7.05332, lng: -73.082078 },
-          { lat: 10.357106, lng: -75.4434 },
-          { lat: 36.881967, lng: -76.271164 },
-          { lat: 42.295881, lng: -75.39428 },
-          { lat: 40.7160658, lng: -73.9863171 }
+          { lat: 2.579775, lng: -72.760284, img: "images/delivery-truck.png" },
+          { lat: 3.502403, lng: -73.690598, img: "images/delivery-truck.png" },
+          { lat: 4.08584, lng: -73.674188, img: "images/delivery-truck.png" },
+          { lat: 7.05332, lng: -73.082078, img: "images/delivery-truck.png" },
+          { lat: 10.357106, lng: -75.4434, img: "images/delivery-truck.png" },
+          { lat: 36.881967, lng: -76.271164, img: "images/delivery-truck.png" },
+          { lat: 42.295881, lng: -75.39428, img: "images/factory.png" },
+          {
+            lat: 40.7160658,
+            lng: -73.9863171,
+            img: "images/delivery-truck.png"
+          }
         ]
       };
       //Aqui se hace el fetch
       this.setState({ info: info });
     } else {
+      let info = {
+        poly: [
+          { lat: 2.552654, lng: -72.836102 },
+          { lat: 2.544609, lng: -72.832424 },
+          { lat: 2.547288, lng: -72.822045 },
+          { lat: 2.558031, lng: -72.825027 },
+          { lat: 2.558028, lng: -72.825028 }
+        ],
+        steps: [
+          { lat: 2.579775, lng: -72.760284, img: "images/delivery-truck.png" },
+          { lat: 3.502403, lng: -73.690598, img: "images/delivery-truck.png" },
+          { lat: 4.08584, lng: -73.674188, img: "images/delivery-truck.png" },
+          { lat: 7.05332, lng: -73.082078, img: "images/delivery-truck.png" },
+          { lat: 10.357106, lng: -75.4434, img: "images/delivery-truck.png" },
+          { lat: 36.881967, lng: -76.271164, img: "images/delivery-truck.png" },
+          { lat: 42.295881, lng: -75.39428, img: "images/factory.png" },
+          {
+            lat: 40.7160658,
+            lng: -73.9863171,
+            img: "images/delivery-truck.png"
+          }
+        ]
+      };
+      //Aqui se hace el fetch
+      this.setState({ info: info });
     }
   }
 
@@ -81,56 +110,61 @@ class MapaPrincipal extends React.Component {
         this.state.info.poly.forEach(element => {
           bounds.extend(new LatLng(element.lat, element.lng));
         });
+        var center = bounds.getCenter();
+        var markerInicial = new google.maps.Marker({
+          position: new google.maps.LatLng(center.lat(), center.lng()),
+          icon: "images/forest.png",
+          map: map
+        });
+        this.state.info.steps.forEach(element => {
+          if (element.length !== undefined) {
+            element.forEach(element2 => {
+              bounds.extend(new LatLng(element2.lat, element2.lng));
+            });
+          } else {
+            bounds.extend(new LatLng(element.lat, element.lng));
+          }
+        });
+        map.fitBounds(bounds);
 
-        setTimeout(() => {
-          this.state.map.panTo(bounds.getCenter());
-          setTimeout(() => {
-            this.state.map.setZoom(13);
-          }, 1000);
-        }, 3000);
+        if (!this.state.ingreso) {
+          var steps = [
+            { lat: center.lat(), lng: center.lng(), img: "images/forest.png" }
+          ];
+          this.state.info.steps.forEach(element => {
+            steps.push(element);
+          });
+          steps.push({
+            lat: this.props.myLocation.lat,
+            lng: this.props.myLocation.lng,
+            img: "images/me.png"
+          });
+          this.pintarSteps(steps, map, google);
+        } else {
+        }
       }
     }
+  }
 
-    // var pos1 = new LatLng(23.634501, -102.552783);
-    // var pos2 = new LatLng(17.987557, -92.929147);
-    // var pos3 = new LatLng(12.987557, -92.929147);
-    // var pos4 = new LatLng(17.987557, -98.929147);
-
-    // var bounds = new LatLngBounds();
-    // bounds.extend(pos1);
-    // bounds.extend(pos2);
-    // bounds.extend(pos3);
-    // bounds.extend(pos4);
-    // map.fitBounds(bounds);
-
-    // var markerP1 = new Marker({
-    //   position: pos1,
-    //   map: map
-    // });
-    // var markerP2 = new Marker({
-    //   position: pos2,
-    //   map: map
-    // });
-    // this.pintarSalto(markerP1, markerP2, map, google);
-
-    // setTimeout(
-    //   () => {
-    //     var markerP3 = new Marker({
-    //       position: pos3,
-    //       map: map
-    //     });
-    //     this.pintarSalto(markerP2, markerP3, map, google);
-    //     setTimeout(() => {
-    //       var markerP4 = new Marker({
-    //         position: pos4,
-    //         map: map
-    //       });
-    //       this.pintarSalto(markerP3, markerP4, map, google);
-    //     }, 2000);
-    //   },
-
-    //   2000
-    // );
+  pintarSteps(steps, map, google) {
+    console.log(steps);
+    setTimeout(() => {
+      var step = steps.shift();
+      if (steps.length > 0) {
+        var markerTemp = new google.maps.Marker({
+          position: new google.maps.LatLng(steps[0].lat, steps[0].lng),
+          icon: steps[0].img,
+          map: map
+        });
+        this.pintarSalto(
+          new google.maps.LatLng(step.lat, step.lng),
+          new google.maps.LatLng(steps[0].lat, steps[0].lng),
+          map,
+          google
+        );
+        this.pintarSteps(steps, map, google);
+      }
+    }, 1000);
   }
 
   render() {
@@ -169,20 +203,17 @@ class MapaPrincipal extends React.Component {
     }
   }
 
-  pintarSalto(markerP1, markerP2, map, google) {
+  pintarSalto(pos1, pos2, map, google) {
     var lineLength = google.maps.geometry.spherical.computeDistanceBetween(
-      markerP1.getPosition(),
-      markerP2.getPosition()
+      pos1,
+      pos2
     );
 
-    var lineHeading = google.maps.geometry.spherical.computeHeading(
-      markerP1.getPosition(),
-      markerP2.getPosition()
-    );
+    var lineHeading = google.maps.geometry.spherical.computeHeading(pos1, pos2);
 
     var markerA = new google.maps.Marker({
       position: google.maps.geometry.spherical.computeOffset(
-        markerP1.getPosition(),
+        pos1,
         lineLength / 3,
         lineHeading - 60
       ),
@@ -195,7 +226,7 @@ class MapaPrincipal extends React.Component {
     });
     var markerB = new google.maps.Marker({
       position: google.maps.geometry.spherical.computeOffset(
-        markerP2.getPosition(),
+        pos2,
         lineLength / 3,
         -lineHeading + 120
       ),
@@ -307,15 +338,15 @@ class MapaPrincipal extends React.Component {
     };
 
     var curvedLine = gmapsCubicBezier(
-      markerP1.getPosition(),
+      pos1,
       markerA.getPosition(),
       markerB.getPosition(),
-      markerP2.getPosition(),
+      pos2,
       0.01
     );
 
     var line = new google.maps.Polyline({
-      path: [markerP1.getPosition(), markerP2.getPosition()],
+      path: [pos1, pos2],
       strokeOpacity: 0,
       icons: [
         {
