@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.css";
 import { withRouter } from "react-router-dom";
-import imagenBosque from "./imagen.png";
 import NavBar from "../NavBar/NavBar";
 import Titulo from "../Titulo/Titulo";
 import Informacion from "../Informacion/Informacion";
+import Sponsors from "../Sponsors/Sponsors";
+import Footer from "../Footer/Footer";
 
 class Home extends React.Component {
   irId = () => {
@@ -20,6 +21,8 @@ class Home extends React.Component {
             <Titulo handleVerificar={this.irId} />
           </div>
           <Informacion />
+          <Sponsors />
+          <Footer />
         </div>
       </div>
     );

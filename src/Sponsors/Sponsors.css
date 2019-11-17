@@ -1,0 +1,21 @@
+.contenedorSponsors {
+  background-color: rgb(205, 228, 201);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.compania1 {
+  padding-top: 20px;
+  height: 70px;
+}
+
+.compania2 {
+  padding-top: 30px;
+  height: 60px;
+}
+
+.compania3 {
+  padding-top: 20px;
+  height: 80px;
+}

@@ -13,7 +13,7 @@ class Informacion extends Component {
     return (
       <div className="contenerdorInformacion">
         <div className="container-fluid">
-          <h1>¿Qué Hacemos?</h1>
+          <h2>¿Qué Hacemos?</h2>
           <div className="row">
             <div className="col-4">
               <div className="seccion">
