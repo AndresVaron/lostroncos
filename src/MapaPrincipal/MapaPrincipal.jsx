@@ -2,6 +2,7 @@ import React from "react";
 import "./MapaPrincipal.css";
 import GoogleMapReact from "google-map-react";
 import { withRouter } from "react-router-dom";
+import moment from "moment";
 
 class MapaPrincipal extends React.Component {
   constructor(props) {
@@ -116,6 +117,13 @@ class MapaPrincipal extends React.Component {
           icon: "images/forest.png",
           map: map
         });
+        var infowindow = new google.maps.InfoWindow({
+          content: "Hello World!"
+        });
+        google.maps.event.addListener(markerInicial, "click", function() {
+          infowindow.open(map, markerInicial);
+        });
+
         this.state.info.steps.forEach(element => {
           if (element.length !== undefined) {
             element.forEach(element2 => {
@@ -126,7 +134,6 @@ class MapaPrincipal extends React.Component {
           }
         });
         map.fitBounds(bounds);
-
         if (!this.state.ingreso) {
           var steps = [
             { lat: center.lat(), lng: center.lng(), img: "images/forest.png" }
@@ -156,6 +163,24 @@ class MapaPrincipal extends React.Component {
           icon: steps[0].img,
           map: map
         });
+        var random = Math.floor(Math.random() * 7) + 1;
+        var date = moment().format("LL");
+        var contentString =
+          '<div id="content">' +
+          '<div id="siteNotice">' +
+          "</div>" +
+          `<img src="/images/transporte-${random}.jpg" alt="grego" class="img-transport" />` +
+          '<div id="bodyContent">' +
+          `<p><b>Revisado el</b> ${date} ` +
+          "</div>" +
+          "</div>";
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        google.maps.event.addListener(markerTemp, "click", function() {
+          infowindow.open(map, markerTemp);
+        });
         this.pintarSalto(
           new google.maps.LatLng(step.lat, step.lng),
           new google.maps.LatLng(steps[0].lat, steps[0].lng),
@@ -181,6 +206,9 @@ class MapaPrincipal extends React.Component {
             <div className="col-12 noPadding">
               <div className="contenedorPrincipal">
                 <div style={{ height: "100vh", width: "100%" }}>
+                  <button className="btn btn-info btn-back" value="GREGO">
+                    Go Back
+                  </button>
                   <GoogleMapReact
                     bootstrapURLKeys={{
                       key: "AIzaSyAEN10VnQRdN67sDTlx-mfWapGXB8rLMas",
