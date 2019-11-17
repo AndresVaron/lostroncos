@@ -10,7 +10,12 @@
 .row {
   margin: 0;
 }
-
+h4 {
+  font-size: 1.5em;
+}
+p {
+  font-size: 1em;
+}
 .seccion {
   padding: 10px;
 }

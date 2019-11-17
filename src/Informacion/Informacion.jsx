@@ -15,7 +15,7 @@ class Informacion extends Component {
         <div className="container-fluid">
           <h2>¿Qué Hacemos?</h2>
           <div className="row">
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="seccion">
                 <img className="imagen" src={troncos} alt="" />
                 <h4>Tala Sostenible de Madera</h4>
@@ -26,7 +26,7 @@ class Informacion extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="seccion">
                 <img className="imagen" src={camion} alt="" />
                 <h4>Tala Sostenible de Madera</h4>
@@ -37,7 +37,7 @@ class Informacion extends Component {
                 </p>
               </div>
             </div>
-            <div className="col-4">
+            <div className="col-md-4">
               <div className="seccion">
                 <img className="imagen" src={qr} alt="" />
                 <h4>Tala Sostenible de Madera</h4>
