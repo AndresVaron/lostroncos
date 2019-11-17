@@ -18,20 +18,7 @@ class MapaPrincipal extends React.Component {
   }
 
   componentDidMount() {
-    if (this.state.id === "1234") {
-    } else {
-      this.props.history.push("/");
-    }
     if (this.props.location.ingreso === true) {
-      this.setState({
-        ingreso: true
-      });
-    } else {
-      this.setState({
-        ingreso: false
-      });
-    }
-    if (!this.state.ingreso) {
       let info = {
         poly: [
           { lat: 2.552654, lng: -72.836102 },
@@ -53,10 +40,99 @@ class MapaPrincipal extends React.Component {
             lng: -73.9863171,
             img: "images/delivery-truck.png"
           }
-        ]
+        ],
+        otros: [
+          {
+            inicio: {
+              lat: 4.08584,
+              lng: -73.674188,
+              img: "images/delivery-truck.png"
+            },
+            fin: {
+              lat: 4.08584,
+              lng: -73.674188,
+              img: "images/delivery-truck.png"
+            }
+          },
+          {
+            inicio: {
+              lng: 4.08584,
+              lng: -73.674188,
+              img: "images/delivery-truck.png"
+            },
+            fin: {
+              lat: 4.484013,
+              lng: -73.129048,
+              img: "images/delivery-truck.png"
+            }
+          },
+          {
+            inicio: {
+              lat: 4.484013,
+              lng: -73.129048,
+              img: "images/delivery-truck.png"
+            },
+            fin: {
+              lat: 4.847649,
+              lng: -72.865611,
+              img: "images/factory.png"
+            }
+          },
+          {
+            inicio: {
+              lat: 4.847649,
+              lng: -72.865611,
+              img: "images/factory.png"
+            },
+            fin: {
+              lat: 6.129682,
+              lng: -71.788428,
+              img: "images/delivery-truck.png"
+            }
+          },
+          {
+            inicio: {
+              lat: 4.847649,
+              lng: -72.865611,
+              img: "images/factory.png"
+            },
+            fin: {
+              lat: 5.928698,
+              lng: -69.566672,
+              img: "images/delivery-truck.png"
+            }
+          },
+          {
+            inicio: {
+              lat: 42.295881,
+              lng: -75.39428,
+              img: "images/delivery-truck.png"
+            },
+            fin: {
+              lat: 38.224391,
+              lng: -85.692303,
+              img: "images/delivery-truck.png"
+            }
+          },
+          {
+            inicio: {
+              lat: 42.295881,
+              lng: -75.39428,
+              img: "images/delivery-truck.png"
+            },
+            fin: {
+              lat: 30.692069,
+              lng: -85.857275,
+              img: "images/delivery-truck.png"
+            }
+          }
+        ] //
       };
       //Aqui se hace el fetch
-      this.setState({ info: info });
+      this.setState({
+        ingreso: true,
+        info: info
+      });
     } else {
       let info = {
         poly: [
@@ -70,19 +146,12 @@ class MapaPrincipal extends React.Component {
           { lat: 2.579775, lng: -72.760284, img: "images/delivery-truck.png" },
           { lat: 3.502403, lng: -73.690598, img: "images/delivery-truck.png" },
           { lat: 4.08584, lng: -73.674188, img: "images/delivery-truck.png" },
-          { lat: 7.05332, lng: -73.082078, img: "images/delivery-truck.png" },
-          { lat: 10.357106, lng: -75.4434, img: "images/delivery-truck.png" },
-          { lat: 36.881967, lng: -76.271164, img: "images/delivery-truck.png" },
-          { lat: 42.295881, lng: -75.39428, img: "images/factory.png" },
-          {
-            lat: 40.7160658,
-            lng: -73.9863171,
-            img: "images/delivery-truck.png"
-          }
-        ]
+          { lat: 7.05332, lng: -73.082078, img: "images/factory.png" }
+        ],
+        otros: []
       };
       //Aqui se hace el fetch
-      this.setState({ info: info });
+      this.setState({ ingreso: false, info: info });
     }
   }
 
@@ -133,8 +202,26 @@ class MapaPrincipal extends React.Component {
             bounds.extend(new LatLng(element.lat, element.lng));
           }
         });
+        if (this.state.info.otros !== undefined) {
+          this.state.info.otros.forEach(element => {
+            bounds.extend(new LatLng(element.fin.lat, element.fin.lng));
+          });
+        }
         map.fitBounds(bounds);
-        if (!this.state.ingreso) {
+        if (this.state.ingreso) {
+          var steps = [
+            { lat: center.lat(), lng: center.lng(), img: "images/forest.png" }
+          ];
+          this.state.info.steps.forEach(element => {
+            steps.push(element);
+          });
+          this.pintarSteps(steps, map, google);
+          setTimeout(() => {
+            this.state.info.otros.forEach(otro => {
+              this.pintarSteps([otro.inicio, otro.fin], map, google);
+            });
+          }, steps.length * 1000 - 1000);
+        } else {
           var steps = [
             { lat: center.lat(), lng: center.lng(), img: "images/forest.png" }
           ];
@@ -147,14 +234,12 @@ class MapaPrincipal extends React.Component {
             img: "images/me.png"
           });
           this.pintarSteps(steps, map, google);
-        } else {
         }
       }
     }
   }
 
   pintarSteps(steps, map, google) {
-    console.log(steps);
     setTimeout(() => {
       var step = steps.shift();
       if (steps.length > 0) {

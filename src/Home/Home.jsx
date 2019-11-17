@@ -8,8 +8,8 @@ import Sponsors from "../Sponsors/Sponsors";
 import Footer from "../Footer/Footer";
 
 class Home extends React.Component {
-  irId = () => {
-    this.props.history.push({ pathname: "/1234", ingreso: true });
+  irId = id => {
+    this.props.history.push({ pathname: "/" + id, ingreso: true });
   };
 
   render() {
